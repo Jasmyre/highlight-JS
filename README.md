@@ -1,4 +1,4 @@
-### Bash command:
+### Terminal command:
 ```bash
 npm install
 ```
