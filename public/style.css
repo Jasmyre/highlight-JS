@@ -1,0 +1,93 @@
+:root {
+  --blue: #282c34;
+  --dark-blue: #1e2127;
+  --light-blue: #61afef;
+  --white: #abb2bf;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--dark-blue);
+  color: #abb2bf;
+  padding: 20px;
+}
+
+pre {
+  /* background-color: lime; */
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  font-family: Consolas, monospace;
+  width: 56%;
+  min-height: 80vh;
+  border-radius: 12px;
+}
+
+/* Optional: Styling for specific elements */
+h1, h2, h3 {
+  color: #61afef;
+}
+
+a {
+  color: #c678dd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-wrapper {
+  background: var(--blue);
+  width: 56%;
+  border-radius: 4px;
+  display: flex;
+  padding: 0 0;
+  justify-content: space-between;
+}
+
+.header-info {
+  padding: 0 24px;
+}
+
+.header-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.header-cta button {
+  background: var(--light-blue);
+  color: #333333;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-weight: 800;
+  border: none;
+
+}
+
+.header-cta button:hover {
+  cursor: pointer;
+  background: #0a89f0;
+  color: #fcfcfc;
+}
+
+.inv-inp {
+  opacity: 0;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  display: none;
+}

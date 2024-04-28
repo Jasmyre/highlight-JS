@@ -24,6 +24,18 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/path", (req, res) => {
+  const indexPath = path.join(publicPath, "index.html");
+  fs.readFile(indexPath, "utf8", (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send("Internal Server Error");
+    } else {
+      res.send(data);
+    }
+  });
+});
+
 // Serve static files from the public directory
 app.use(express.static(publicPath));
 

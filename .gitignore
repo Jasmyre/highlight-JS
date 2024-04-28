@@ -1,1 +1,18 @@
-/node_modules
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# Editor-specific files
+.DS_Store
+.idea/
+
+# Build artifacts
+dist/
+*.log
